@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCP Firewall - The First AI Agent Security Solution | Unbolt.ai</title>
-    <meta name="description" content="Protect your AI agents from the next generation of cyber threats. The first dedicated MCP Firewall for autonomous AI systems.">
+    <title>Secure Agents - Complete AI Governance Platform | Unbolt.ai</title>
+    <meta name="description" content="The first comprehensive AI governance platform that secures agent-to-agent collaboration, tool access, and policy enforcement for enterprise AI systems.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
@@ -206,8 +206,8 @@
             color: rgba(255, 255, 255, 0.8);
         }
 
-        /* Problem Section */
-        .problem {
+        /* Platform Overview */
+        .platform-overview {
             background: white;
             padding: 5rem 0;
             margin: 2rem 0;
@@ -215,22 +215,21 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
 
-        .problem h2 {
-            font-size: 2.5rem;
+        .platform-overview h2 {
             text-align: center;
+            font-size: 2.5rem;
             margin-bottom: 3rem;
             color: #2c3e50;
         }
 
-        .problem-grid {
+        .platform-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
             justify-items: center;
         }
 
-        .problem-card {
+        .platform-card {
             background: linear-gradient(135deg, #1e293b, #334155);
             color: white;
             padding: 2rem;
@@ -243,31 +242,32 @@
             max-width: 350px;
         }
 
-        .problem-card h3 {
+        .platform-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: #667eea;
         }
 
-        /* Solution Section */
-        .solution {
+        /* Problem Section */
+        .problem {
             padding: 5rem 0;
             color: white;
             text-align: center;
         }
 
-        .solution h2 {
+        .problem h2 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
 
-        .solution p {
-            font-size: 1.3rem;
+        .problem p {
+            font-size: 1.2rem;
             margin-bottom: 3rem;
             opacity: 0.9;
         }
 
-        /* Features */
-        .features {
+        /* Solution Section */
+        .solution {
             background: white;
             padding: 5rem 0;
             margin: 2rem 0;
@@ -275,32 +275,38 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
 
-        .features h2 {
+        .solution h2 {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
             color: #2c3e50;
         }
 
-        .features-grid {
+        .solution-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             justify-items: center;
         }
 
-        .feature {
-            text-align: center;
+        .solution-card {
+            background: rgba(255, 255, 255, 0.05);
             padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 350px;
         }
 
-        .feature-icon {
+        .solution-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
             color: #667eea;
         }
 
-        .feature h3 {
+        .solution-card h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
             color: #2c3e50;
@@ -322,57 +328,6 @@
             font-size: 1.2rem;
             margin-bottom: 2rem;
             opacity: 0.9;
-        }
-
-        .contact-button {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            border: 2px solid white;
-            transition: all 0.3s ease;
-        }
-
-        .contact-button:hover {
-            background: white;
-            color: #667eea;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .problem h2,
-            .solution h2,
-            .features h2,
-            .contact h2 {
-                font-size: 2rem;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .fade-in {
-            animation: fadeInUp 0.8s ease-out;
         }
 
         /* Footer */
@@ -415,7 +370,22 @@
             font-size: 0.9rem;
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .problem h2,
+            .solution h2,
+            .contact h2 {
+                font-size: 2rem;
+            }
+            
             .footer-links {
                 gap: 1rem;
             }
@@ -424,6 +394,22 @@
                 padding: 0.4rem 0.8rem;
                 font-size: 0.9rem;
             }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
         }
     </style>
 </head>
@@ -439,13 +425,13 @@
 
         <!-- Hero Section -->
         <section class="hero fade-in">
-            <h1>MCP Firewall</h1>
-            <p class="tagline">Securing AI Agents. Protecting Enterprise Systems. Defining a New Category.</p>
+            <h1>Secure Agents</h1>
+            <p class="tagline">Complete AI Governance Platform</p>
             <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.8;">
-                As AI agents gain autonomy, they're becoming the biggest security risk to enterprise systems. 
-                Traditional firewalls weren't built for intelligent, autonomous threats.
+                The first comprehensive platform that secures agent-to-agent collaboration, 
+                tool access, and policy enforcement for enterprise AI systems.
             </p>
-            <a href="#contact" class="cta-button">Secure Your Agents Now</a>
+            <a href="#contact" class="cta-button">Get Early Access</a>
         </section>
 
         <!-- Stats Section -->
@@ -461,89 +447,84 @@
                 </div>
                 <div class="stat-item">
                     <span class="stat-number">0</span>
-                    <span class="stat-label">dedicated MCP security solutions exist today</span>
+                    <span class="stat-label">comprehensive AI governance platforms exist today</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Overview -->
+        <section class="platform-overview fade-in">
+            <h2>Complete AI Governance Platform</h2>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <h3>🛡️ MCP Firewall</h3>
+                    <p>The first dedicated security layer for AI agent tool access. Protects your enterprise systems from autonomous AI threats with policy-driven access control.</p>
+                </div>
+                <div class="platform-card">
+                    <h3>🤝 A2A Collaboration</h3>
+                    <p>Secure agent-to-agent communication and orchestration. Enable intelligent collaboration while maintaining governance and audit trails.</p>
+                </div>
+                <div class="platform-card">
+                    <h3>⚖️ Policy Engine</h3>
+                    <p>Real-time policy evaluation using OPA. Define business rules as code and enforce them across all agent interactions automatically.</p>
                 </div>
             </div>
         </section>
 
         <!-- Problem Section -->
         <section class="problem fade-in">
-            <h2>The Problem is Real</h2>
-            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.8);">
-                AI agents are accessing your most sensitive systems with unprecedented autonomy. But nobody's watching the watchers.
+            <h2>The AI Governance Crisis</h2>
+            <p>
+                Your AI agents are accessing sensitive systems with unprecedented autonomy. 
+                Traditional security tools don't understand agent behavior, leaving you exposed to new threats.
             </p>
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <h3>🎯 Prompt Injection Attacks</h3>
-                    <p>Malicious actors hijack agent behavior through crafted prompts, turning your AI against you.</p>
-                </div>
-                <div class="problem-card">
-                    <h3>🔓 Privilege Escalation</h3>
-                    <p>Agents break out of intended boundaries, accessing systems and data they shouldn't.</p>
-                </div>
-                <div class="problem-card">
-                    <h3>📊 Data Exfiltration</h3>
-                    <p>Compromised agents silently extract sensitive data through legitimate-looking operations.</p>
-                </div>
-                <div class="problem-card">
-                    <h3>🔄 Infinite Loops</h3>
-                    <p>Runaway agents overwhelm systems, causing outages and racking up massive costs.</p>
-                </div>
-            </div>
         </section>
 
         <!-- Solution Section -->
         <section class="solution fade-in">
-            <h2>Introducing the MCP Firewall</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.9;">
-                The first security solution built specifically for AI agents and Model Context Protocol (MCP).
-            </p>
-        </section>
-
-        <!-- Features Section -->
-        <section class="features fade-in">
-            <h2>Why MCP Firewall?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Agent Authentication</h3>
-                    <p>Verify agent identity and integrity before any system access</p>
+            <h2>What Secure Agents Delivers</h2>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">👁️</div>
+                    <h3>Complete Visibility</h3>
+                    <p>See exactly what every agent is doing in real-time. Monitor tool access, agent collaboration, and data interactions with comprehensive audit trails.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">📋</div>
-                    <h3>Policy-as-Code</h3>
-                    <p>Define and enforce granular access policies using modern DevOps practices</p>
+                <div class="solution-card">
+                    <div class="solution-icon">🔒</div>
+                    <h3>Policy Enforcement</h3>
+                    <p>Define business rules as code and enforce them automatically. Control access based on trust levels, capabilities, and business context.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🔍</div>
-                    <h3>Behavioral Analytics</h3>
-                    <p>AI-powered threat detection that understands agent behavior patterns</p>
+                <div class="solution-card">
+                    <div class="solution-icon">📊</div>
+                    <h3>Compliance Ready</h3>
+                    <p>Generate audit reports for any time period. Prove compliance with HIPAA, SOX, GDPR, and other regulatory requirements automatically.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🚨</div>
-                    <h3>Real-time Monitoring</h3>
-                    <p>Complete visibility into agent actions with instant threat alerts</p>
+                <div class="solution-card">
+                    <div class="solution-icon">⚡</div>
+                    <h3>Zero Configuration</h3>
+                    <p>Deploy in minutes with auto-discovery of existing agent-tool connections. No code changes required for your current agents.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🔐</div>
-                    <h3>Zero Trust Architecture</h3>
-                    <p>Never trust, always verify - every request, every agent, every time</p>
+                <div class="solution-card">
+                    <div class="solution-icon">🤖</div>
+                    <h3>Agent Collaboration</h3>
+                    <p>Enable secure agent-to-agent communication with built-in governance. Orchestrate complex workflows while maintaining security controls.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🏢</div>
+                <div class="solution-card">
+                    <div class="solution-icon">🏢</div>
                     <h3>Enterprise Ready</h3>
-                    <p>Seamless integration with existing security infrastructure and compliance frameworks</p>
+                    <p>Integrate with your existing identity management, SIEM, and monitoring systems. Scale to thousands of agents with enterprise-grade reliability.</p>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section class="contact fade-in" id="contact">
-            <h2 style="margin-bottom: 2rem; font-size: 2.5rem;">Ready to Secure Your AI Agents?</h2>
-            <p style="margin-bottom: 3rem; font-size: 1.2rem; color: #b0b0b0;">
-                We're working with select enterprises to define the future of AI agent security.
+            <h2>Ready to Govern Your AI Future?</h2>
+            <p>
+                We're working with select enterprises to define the future of AI governance.<br>
+                Join the AI security revolution.
             </p>
-            <a href="mailto:hello@unbolt.ai?subject=MCP%20Firewall%20-%20Early%20Access" class="cta-button">
+            <a href="mailto:hello@unbolt.ai?subject=Secure%20Agents%20-%20Early%20Access" class="cta-button">
                 Get Early Access
             </a>
             <a href="https://linkedin.com/company/unbolt-ai" class="cta-button cta-secondary">
@@ -559,7 +540,7 @@
                 <a href="https://linkedin.com/company/unbolt-ai">LinkedIn</a>
                 <a href="https://twitter.com/unboltai">Twitter</a>
             </div>
-            <p>&copy; 2025 Unbolt.ai. Securing the future of AI agents.</p>
+            <p>&copy; 2025 Unbolt.ai. Governing the future of AI agents.</p>
         </div>
     </footer>
 
