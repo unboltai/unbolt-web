@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Lock icon scaled and positioned for favicon -->
+  <g transform="translate(50,50) scale(0.7)">
+    <path d="M102.4 369.6C45.867 369.6 0 323.733 0 267.2V102.4C0 45.867 45.867 0 102.4 0H267.2C323.733 0 369.6 45.867 369.6 102.4V164.8H307.2V102.4C307.2 80.3467 289.253 62.4 267.2 62.4H102.4C80.3467 62.4 62.4 80.3467 62.4 102.4V267.2C62.4 289.253 80.3467 307.2 102.4 307.2H164.8V369.6H102.4Z" fill="#1a1a1a"/>
+    <circle cx="204.8" cy="204.8" r="51.2" fill="#1a1a1a"/>
+    <path d="M348 464C348 481.673 362.327 496 380 496H460C477.673 496 492 481.673 492 464V384C492 366.327 477.673 352 460 352H420V312C420 294.327 405.673 280 388 280H348V320H388V352H348V464Z" fill="#1a1a1a"/>
+    <path d="M416 464C416 472.837 423.163 480 432 480C440.837 480 448 472.837 448 464V416C448 407.163 440.837 400 432 400C423.163 400 416 407.163 416 416V464Z" fill="#1a1a1a"/>
+  </g>
+  <!-- Text positioned below the lock for favicon -->
+  <text x="400" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="180" font-weight="bold" fill="#1a1a1a">u</text>
+</svg>
