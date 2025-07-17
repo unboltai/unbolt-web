@@ -1,4 +1,6 @@
-# unbolt-web
-Website for Unbolt AI
+# Unbolt AI Website
 
-Copyriight: Unbolt AI
+The official website for [Unbolt AI](https://unbolt.ai) - Complete AI Governance Platform.
+
+---
+Copyright © 2025 Unbolt AI
