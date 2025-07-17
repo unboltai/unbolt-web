@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Agents - Complete AI Governance Platform | Unbolt.ai</title>
-    <meta name="description" content="The first comprehensive AI governance platform that secures agent-to-agent collaboration, tool access, and policy enforcement for enterprise AI systems.">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="favicon.png">
+---
+layout: default
+title: "Secure Agents - Complete AI Governance Platform"
+description: "The first comprehensive AI governance platform that secures agent-to-agent collaboration, tool access, and policy enforcement for enterprise AI systems."
+---
     <style>
         * {
             margin: 0;
@@ -110,6 +106,26 @@
         .logo-text:hover {
             opacity: 0.8;
             transform: scale(1.05);
+        }
+
+        .nav-links {
+            margin-top: 1rem;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .nav-links a:hover {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
         /* Hero Section */
@@ -412,8 +428,6 @@
             animation: fadeInUp 0.8s ease-out;
         }
     </style>
-</head>
-<body>
     <!-- Animated background particles -->
     <div class="particles" id="particles"></div>
     
@@ -421,6 +435,11 @@
         <!-- Header -->
         <header>
             <a href="#" class="logo-text">unbolt</a>
+            <div class="nav-links">
+                <a href="/webinar">Webinars</a>
+                <a href="/recordings">Recordings</a>
+                <a href="mailto:hello@unbolt.ai">Contact</a>
+            </div>
         </header>
 
         <!-- Hero Section -->
@@ -545,6 +564,21 @@
     </footer>
 
     <script>
+        // GitHub Pages routing helper
+        function handleCleanUrls() {
+            const path = window.location.pathname;
+            const routes = {
+                '/webinar': '/webinar.html',
+                '/recordings': '/recordings.html'
+            };
+            
+            // If we're on a clean URL path, redirect to the .html file
+            if (routes[path]) {
+                window.location.href = routes[path];
+                return;
+            }
+        }
+
         // Create floating particles
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
@@ -590,6 +624,7 @@
 
         // Initialize particles when page loads
         document.addEventListener('DOMContentLoaded', createParticles);
-    </script>
-</body>
-</html> 
+        
+        // Handle clean URLs
+        handleCleanUrls();
+    </script> 
