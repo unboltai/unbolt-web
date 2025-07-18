@@ -367,155 +367,30 @@ description: "Watch past AI security webinars and learn about agent governance, 
         <!-- Recordings Section -->
         <section class="recordings-section fade-in">
             <div class="recordings-grid">
+                {% for webinar in site.data.webinar.past_webinars %}
                 <div class="recording-card">
                     <div class="recording-thumbnail">
-                        🛡️
+                        {{ webinar.icon }}
                     </div>
                     <div class="recording-content">
-                        <div class="recording-date">January 20, 2025</div>
-                        <div class="recording-title">Introduction to AI Agent Security</div>
+                        <div class="recording-date">{{ webinar.date }}</div>
+                        <div class="recording-title">{{ webinar.title }}</div>
                         <div class="recording-description">
-                            Learn the fundamentals of securing AI agents in enterprise environments. 
-                            Discover the unique challenges and best practices for protecting autonomous AI systems.
+                            {{ webinar.description }}
                         </div>
                         <div class="recording-topics">
                             <h4>Topics Covered:</h4>
                             <ul class="topics-list">
-                                <li>AI agent threat landscape</li>
-                                <li>Tool access control strategies</li>
-                                <li>Policy enforcement frameworks</li>
-                                <li>Real-world case studies</li>
+                                {% for topic in webinar.topics %}
+                                <li>{{ topic }}</li>
+                                {% endfor %}
                             </ul>
                         </div>
-                        <a href="#" class="watch-btn">Watch Recording</a>
-                        <div class="duration">Duration: 1 hour 15 minutes</div>
+                        <a href="{{ webinar.link }}" class="watch-btn">Watch Recording</a>
+                        <div class="duration">Duration: {{ webinar.duration }}</div>
                     </div>
                 </div>
-
-                <div class="recording-card">
-                    <div class="recording-thumbnail">
-                        🔐
-                    </div>
-                    <div class="recording-content">
-                        <div class="recording-date">December 15, 2024</div>
-                        <div class="recording-title">MCP Security Deep Dive</div>
-                        <div class="recording-description">
-                            Explore the Model Context Protocol (MCP) and learn how to implement 
-                            comprehensive security controls for AI agent tool access.
-                        </div>
-                        <div class="recording-topics">
-                            <h4>Topics Covered:</h4>
-                            <ul class="topics-list">
-                                <li>MCP architecture overview</li>
-                                <li>Firewall implementation</li>
-                                <li>Access control policies</li>
-                                <li>Integration strategies</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="watch-btn">Watch Recording</a>
-                        <div class="duration">Duration: 1 hour 30 minutes</div>
-                    </div>
-                </div>
-
-                <div class="recording-card">
-                    <div class="recording-thumbnail">
-                        🤝
-                    </div>
-                    <div class="recording-content">
-                        <div class="recording-date">November 28, 2024</div>
-                        <div class="recording-title">Agent-to-Agent Collaboration Security</div>
-                        <div class="recording-description">
-                            Understand how to enable secure collaboration between multiple AI agents 
-                            while maintaining governance and audit trails.
-                        </div>
-                        <div class="recording-topics">
-                            <h4>Topics Covered:</h4>
-                            <ul class="topics-list">
-                                <li>Multi-agent architectures</li>
-                                <li>Trust frameworks</li>
-                                <li>Communication protocols</li>
-                                <li>Audit and compliance</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="watch-btn">Watch Recording</a>
-                        <div class="duration">Duration: 1 hour 45 minutes</div>
-                    </div>
-                </div>
-
-                <div class="recording-card">
-                    <div class="recording-thumbnail">
-                        ⚖️
-                    </div>
-                    <div class="recording-content">
-                        <div class="recording-date">October 30, 2024</div>
-                        <div class="recording-title">Policy Engine Implementation</div>
-                        <div class="recording-description">
-                            Learn how to implement real-time policy evaluation using OPA (Open Policy Agent) 
-                            for AI agent governance.
-                        </div>
-                        <div class="recording-topics">
-                            <h4>Topics Covered:</h4>
-                            <ul class="topics-list">
-                                <li>OPA fundamentals</li>
-                                <li>Policy as code</li>
-                                <li>Real-time evaluation</li>
-                                <li>Integration patterns</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="watch-btn">Watch Recording</a>
-                        <div class="duration">Duration: 1 hour 20 minutes</div>
-                    </div>
-                </div>
-
-                <div class="recording-card">
-                    <div class="recording-thumbnail">
-                        📊
-                    </div>
-                    <div class="recording-content">
-                        <div class="recording-date">September 25, 2024</div>
-                        <div class="recording-title">AI Security Compliance & Auditing</div>
-                        <div class="recording-description">
-                            Discover how to implement comprehensive audit trails and compliance 
-                            reporting for AI agent activities.
-                        </div>
-                        <div class="recording-topics">
-                            <h4>Topics Covered:</h4>
-                            <ul class="topics-list">
-                                <li>Audit trail design</li>
-                                <li>Compliance frameworks</li>
-                                <li>Reporting automation</li>
-                                <li>Regulatory requirements</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="watch-btn">Watch Recording</a>
-                        <div class="duration">Duration: 1 hour 10 minutes</div>
-                    </div>
-                </div>
-
-                <div class="recording-card">
-                    <div class="recording-thumbnail">
-                        🚀
-                    </div>
-                    <div class="recording-content">
-                        <div class="recording-date">August 18, 2024</div>
-                        <div class="recording-title">Enterprise AI Security Deployment</div>
-                        <div class="recording-description">
-                            Learn best practices for deploying AI security solutions at enterprise scale 
-                            with minimal disruption to existing systems.
-                        </div>
-                        <div class="recording-topics">
-                            <h4>Topics Covered:</h4>
-                            <ul class="topics-list">
-                                <li>Deployment strategies</li>
-                                <li>Integration planning</li>
-                                <li>Change management</li>
-                                <li>Performance optimization</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="watch-btn">Watch Recording</a>
-                        <div class="duration">Duration: 1 hour 35 minutes</div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </section>
 

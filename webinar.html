@@ -3,6 +3,15 @@ layout: default
 title: "AI Security Webinars"
 description: "Join our free webinars on AI security governance. Learn about agent-to-agent collaboration, tool access control, and policy enforcement."
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Security Webinars - Unbolt.ai</title>
+    <meta name="description" content="Join our free webinars on AI security governance. Learn about agent-to-agent collaboration, tool access control, and policy enforcement.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
         * {
             margin: 0;
@@ -179,6 +188,12 @@ description: "Join our free webinars on AI security governance. Learn about agen
             opacity: 0.9;
         }
 
+        .poster-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
         .poster-details {
             text-align: left;
         }
@@ -209,7 +224,7 @@ description: "Join our free webinars on AI security governance. Learn about agen
             font-weight: bold;
         }
 
-        /* Registration Form */
+        /* Registration Section */
         .registration-form {
             background: white;
             border-radius: 20px;
@@ -234,66 +249,6 @@ description: "Join our free webinars on AI security governance. Learn about agen
             font-size: 1.1rem;
         }
 
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group.full-width {
-            grid-column: 1 / -1;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #2c3e50;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 2px solid #e1e5e9;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .checkbox-group {
-            margin: 1rem 0;
-        }
-
-        .checkbox-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .checkbox-item input[type="checkbox"] {
-            width: auto;
-            margin-right: 0.5rem;
-        }
-
-        .checkbox-item label {
-            margin-bottom: 0;
-            font-weight: 400;
-        }
-
         .submit-btn {
             background: linear-gradient(45deg, #ff6b6b, #ee5a24);
             color: white;
@@ -305,7 +260,6 @@ description: "Join our free webinars on AI security governance. Learn about agen
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
-            width: 100%;
         }
 
         .submit-btn:hover {
@@ -458,13 +412,14 @@ description: "Join our free webinars on AI security governance. Learn about agen
             animation: fadeInUp 0.8s ease-out;
         }
     </style>
+</head>
+<body>
     <div class="container">
         <!-- Header -->
         <header>
             <a href="/" class="logo-text">unbolt</a>
             <div class="nav-links">
                 <a href="/">Home</a>
-                <a href="/recordings">Webinar Recordings</a>
                 <a href="mailto:hello@unbolt.ai">Contact</a>
             </div>
         </header>
@@ -475,148 +430,55 @@ description: "Join our free webinars on AI security governance. Learn about agen
             <p class="subtitle">Free expert insights on AI governance and security</p>
         </section>
 
-        <!-- Recordings Link -->
-        <section class="recordings-link fade-in">
-            <a href="recordings.html">📺 View Past Webinar Recordings</a>
-        </section>
+
 
         <!-- Webinar Poster -->
         <section class="webinar-poster fade-in">
             <div class="poster-header">
                 <h2>Latest Webinar</h2>
-                <div class="date">February 15, 2025</div>
-                <div class="time">2:00 PM - 3:30 PM EST</div>
+                <div class="date">{{ site.data.webinar.current.date }}</div>
+                <div class="time">{{ site.data.webinar.current.time }}</div>
             </div>
-            
             <div class="poster-content">
                 <div class="poster-image">
-                    <h3>🛡️ Securing AI Agents in Production</h3>
-                    <p>Learn how to implement comprehensive security controls for AI agents accessing enterprise systems and tools.</p>
+                    <span class="poster-icon">🛡️</span>
+                    <h3>{{ site.data.webinar.current.title }}</h3>
+                    <p>{{ site.data.webinar.current.description }}</p>
                 </div>
-                
                 <div class="poster-details">
                     <h3>What You'll Learn:</h3>
                     <ul>
-                        <li>Real-world AI agent security challenges</li>
-                        <li>Implementing MCP firewall protection</li>
-                        <li>Policy-driven access control strategies</li>
-                        <li>Audit and compliance best practices</li>
-                        <li>Live demo of Secure Agents platform</li>
+                        {% for topic in site.data.webinar.current.learn_topics %}
+                        <li>{{ topic }}</li>
+                        {% endfor %}
                     </ul>
-                    
                     <h3>Who Should Attend:</h3>
                     <ul>
-                        <li>Security professionals</li>
-                        <li>AI/ML engineers</li>
-                        <li>DevOps teams</li>
-                        <li>Enterprise architects</li>
-                        <li>Compliance officers</li>
+                        {% for person in site.data.webinar.current.audience %}
+                        <li>{{ person }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Registration Form -->
+        <!-- Registration Section -->
         <section class="registration-form fade-in">
             <div class="form-header">
                 <h2>Register for Free</h2>
                 <p>Secure your spot and get the recording even if you can't attend live</p>
             </div>
             
-            <form id="webinarForm">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="firstName">First Name *</label>
-                        <input type="text" id="firstName" name="firstName" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="lastName">Last Name *</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address (Work Email) *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="company">Company/Organization *</label>
-                        <input type="text" id="company" name="company" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="jobTitle">Job Title *</label>
-                        <input type="text" id="jobTitle" name="jobTitle" required>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="phone">Phone Number (Optional)</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                
-                <div class="form-group">
-                    <label>What's your primary interest in AI security? (Check all that apply)</label>
-                    <div class="checkbox-group">
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="interest1" name="interests" value="developing">
-                            <label for="interest1">Currently developing AI applications</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="interest2" name="interests" value="evaluating">
-                            <label for="interest2">Evaluating AI security frameworks</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="interest3" name="interests" value="managing">
-                            <label for="interest3">Managing AI-related security risks</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="interest4" name="interests" value="learning">
-                            <label for="interest4">Learning about emerging threats</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Which best describes your organization? (Check all that apply)</label>
-                    <div class="checkbox-group">
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="org1" name="organization" value="technology">
-                            <label for="org1">Technology company</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="org2" name="organization" value="financial">
-                            <label for="org2">Financial services</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="org3" name="organization" value="healthcare">
-                            <label for="org3">Healthcare</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="org4" name="organization" value="government">
-                            <label for="org4">Government/Public sector</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="org5" name="organization" value="consulting">
-                            <label for="org5">Consulting</label>
-                        </div>
-                        <div class="checkbox-item">
-                            <input type="checkbox" id="org6" name="organization" value="other">
-                            <label for="org6">Other</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="questions">Any specific AI security questions you'd like addressed?</label>
-                    <textarea id="questions" name="questions" rows="4" placeholder="Share your specific challenges or questions..."></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Register for Webinar</button>
-            </form>
+            <div style="text-align: center; padding: 2rem;">
+                <a href="https://events.teams.microsoft.com/event/caba5858-6f7e-4344-adc2-3eb3df19d8dd@a6415f22-da63-4124-991c-0201818e9895" 
+                   class="submit-btn" 
+                   style="display: inline-block; text-decoration: none; width: auto; padding: 1.5rem 3rem; font-size: 1.2rem;">
+                    Register for Webinar
+                </a>
+                <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                    You'll be redirected to Microsoft Teams to complete your registration
+                </p>
+            </div>
         </section>
 
         <!-- FAQ Section -->
@@ -632,7 +494,7 @@ description: "Join our free webinars on AI security governance. Learn about agen
             
             <div class="faq-item">
                 <div class="faq-question">Will I get the recording if I can't attend live?</div>
-                <div class="faq-answer">Absolutely! All registrants receive the recording and materials within 24 hours.</div>
+                <div class="faq-answer">Yes! All registrants will receive the recording and materials after the event.</div>
             </div>
             
             <div class="faq-item">
@@ -664,22 +526,6 @@ description: "Join our free webinars on AI security governance. Learn about agen
     </footer>
 
     <script>
-        // Form submission handling
-        document.getElementById('webinarForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Collect form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send the data to your backend
-            // For now, we'll just show a success message
-            alert('Thank you for registering! You will receive a confirmation email shortly.');
-            
-            // Reset form
-            this.reset();
-        });
-
         // Simple scroll animation
         const observerOptions = {
             threshold: 0.1,
@@ -701,4 +547,6 @@ description: "Join our free webinars on AI security governance. Learn about agen
             el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             observer.observe(el);
         });
-    </script> 
+    </script>
+</body>
+</html> 
