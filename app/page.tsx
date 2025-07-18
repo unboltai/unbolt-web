@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import {
-  ChevronDown,
   Menu,
   X,
   ArrowRight,
@@ -21,10 +20,10 @@ import {
   Building2,
   Mail,
   Linkedin,
-  Twitter,
   Activity,
   Network,
   FileCheck,
+  TvMinimalPlay,
 } from "lucide-react"
 
 export default function UnboltLandingPage() {
@@ -123,13 +122,15 @@ export default function UnboltLandingPage() {
               </div>
 
               <div className="flex items-center gap-4">
-                <a href="#" className="hidden sm:block font-medium text-base hover:text-primary transition-colors">
-                  Sign In
-                </a>
                 <Button size="default" className="font-medium">
                   Get Early Access
                 </Button>
-
+                <a href="#" className="hidden sm:block font-medium text-base hover:text-primary transition-colors">
+                  <Button variant="outline" size="default" className="font-medium">
+                    <TvMinimalPlay className="mr-2 h-5 w-5" />
+                      Webinars
+                  </Button>
+                </a>
                 <Button
                   variant="ghost"
                   size="icon"
@@ -224,15 +225,11 @@ export default function UnboltLandingPage() {
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto">
-              <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm font-medium">
-                <span className="text-primary mr-2">🛡️</span>
-                Secure Agents
-              </Badge>
 
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-7">
                 Complete AI <br className="hidden sm:block" />
                 <span className="relative inline-block">
-                  <span className="relative z-10">Governance</span>
+                  <span className="relative z-10">Security & Governance</span>
                   <div className="absolute bottom-2 left-0 right-0 h-4 bg-accent/30 -rotate-1 rounded-lg" />
                 </span>{" "}
                 Platform
@@ -500,7 +497,9 @@ export default function UnboltLandingPage() {
                 <div className="space-y-4 text-sm">
                   <div className="flex items-center gap-3 hover:text-foreground transition-colors cursor-pointer">
                     <Mail className="h-5 w-5 text-primary" />
-                    <span>hello@unbolt.ai</span>
+                    <span>hello@unbolt.ai
+                      <a href="mailto:hello@unbolt.ai" className="hover:underline"></a>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -550,7 +549,7 @@ export default function UnboltLandingPage() {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
+                    <a href="mailto:hello@unbolt.ai" className="hover:text-foreground transition-colors">
                       Contact
                     </a>
                   </li>
@@ -569,13 +568,6 @@ export default function UnboltLandingPage() {
                   rel="noopener noreferrer"
                 >
                   <Linkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href="#"
-                  className="hover:text-foreground transition-colors p-2 hover:bg-accent rounded-lg"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="w-5 h-5" />
                 </a>
               </div>
             </div>
