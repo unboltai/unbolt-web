@@ -161,11 +161,6 @@ export default function WebinarPage({ data }: WebinarPageProps) {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-8 p-5 bg-gradient-to-r from-green-50 to-green-100/50 rounded-xl border border-green-200/60 shadow-sm">
-                      <p className="text-sm text-green-800 font-medium leading-relaxed">
-                        💡 <strong>Bonus:</strong> Get exclusive access to our AI Security Toolkit (worth $297)
-                      </p>
-                    </div>
                   </CardContent>
                 </Card>
 
