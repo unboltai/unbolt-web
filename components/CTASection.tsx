@@ -83,13 +83,13 @@ export default function CTASection({
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           {primaryButtonHref && primaryButtonHref !== "#" ? (
             <a href={primaryButtonHref} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="px-8 py-3 text-lg font-medium group">
+              <Button size="lg" className="px-8 py-3 text-lg font-medium group bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-0 ring-2 ring-orange-400/20 hover:ring-orange-400/40">
                 {primaryButtonText}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </a>
           ) : (
-            <Button size="lg" className="px-8 py-3 text-lg font-medium group">
+            <Button size="lg" className="px-8 py-3 text-lg font-medium group bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-0 ring-2 ring-orange-400/20 hover:ring-orange-400/40">
               {primaryButtonText}
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
