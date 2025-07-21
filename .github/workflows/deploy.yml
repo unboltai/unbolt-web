@@ -2,9 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ np/redesign ]
   pull_request:
-    branches: [ main ]
+    branches: [ np/redesign ]
 
 jobs:
   build-and-deploy:
@@ -33,7 +33,7 @@ jobs:
       run: cp CNAME ./out/CNAME
 
     - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/np/redesign'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
