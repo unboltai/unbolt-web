@@ -4,9 +4,10 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import Header from "@/components/Header"
+import CTASection from "@/components/CTASection"
+import Footer from "@/components/Footer"
 import {
-  Menu,
-  X,
   ArrowRight,
   Play,
   Shield,
@@ -18,16 +19,12 @@ import {
   Zap,
   Bot,
   Building2,
-  Mail,
-  Linkedin,
   Activity,
   Network,
   FileCheck,
-  TvMinimalPlay,
 } from "lucide-react"
 
 export default function UnboltLandingPage() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const stats = [
     { value: "89%", label: "of enterprises cite AI agent security as their biggest concern" },
@@ -104,74 +101,7 @@ export default function UnboltLandingPage() {
   return (
     <div className="min-h-screen bg-background font-sans">
       <div className="max-w-screen-xl mx-auto">
-        {/* Header */}
-        <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
-          <nav className="py-4 px-6 lg:px-8">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-10">
-                <a href="#" className="flex items-center gap-3 group">
-                  <img
-                    src="/unbolt-logo.svg?v=2"
-                    alt="Unbolt Logo"
-                    width="160"
-                    height="50"
-                    className="transition-transform group-hover:scale-105"
-                  />
-                </a>
-
-              </div>
-
-              <div className="flex items-center gap-4">
-                <Button size="default" className="font-medium">
-                  Get Early Access
-                </Button>
-                <a href="#" className="hidden sm:block font-medium text-base hover:text-primary transition-colors">
-                  <Button variant="outline" size="default" className="font-medium">
-                    <TvMinimalPlay className="mr-2 h-5 w-5" />
-                      Webinars
-                  </Button>
-                </a>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="md:hidden"
-                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                  aria-label="Toggle mobile menu"
-                >
-                  {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-                </Button>
-              </div>
-            </div>
-
-            {/* Mobile Menu */}
-            {isMobileMenuOpen && (
-              <div className="md:hidden mt-4 pb-4 border-t border-border">
-                <ul className="space-y-4 pt-4">
-                  <li>
-                    <a href="#" className="block py-2 hover:text-primary transition-colors">
-                      Platform
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="block py-2 hover:text-primary transition-colors">
-                      Solutions
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="block py-2 hover:text-primary transition-colors">
-                      Pricing
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="block py-2 hover:text-primary transition-colors">
-                      Sign In
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            )}
-          </nav>
-        </header>
+        <Header />
 
         <main>
           {/* Hero Section */}
@@ -437,142 +367,10 @@ export default function UnboltLandingPage() {
             </div>
           </section>
 
-          {/* Final CTA Section */}
-          <section className="bg-gradient-to-br from-muted/50 to-card rounded-t-3xl py-20 px-6 lg:px-8 border-t border-border relative overflow-hidden">
-            <div className="absolute inset-0 bg-grid-pattern opacity-20" />
-
-            <div className="relative z-10 max-w-5xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                Ready to Govern Your <br className="hidden sm:block" />
-                <span className="relative inline-block">
-                  <span className="relative z-10">AI Future?</span>
-                  <div className="absolute bottom-2 left-0 right-0 h-4 bg-accent/30 -rotate-1 rounded-lg" />
-                </span>
-              </h2>
-
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                We're working with select enterprises to define the future of AI governance. Join the AI security
-                revolution.
-              </p>
-
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <Button size="lg" className="px-8 py-3 text-lg font-medium group">
-                  Get Early Access
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Button>
-                <a href="https://www.linkedin.com/company/unbolt-ai" target="_blank" rel="noopener noreferrer">
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="px-8 py-3 text-lg font-medium group bg-background/80 backdrop-blur-sm"
-                  >
-                    <Linkedin className="mr-2 h-5 w-5" />
-                    Connect on LinkedIn
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </section>
         </main>
 
-        {/* Footer */}
-        <footer className="bg-muted/50 text-muted-foreground pt-16 pb-8 px-6 lg:px-8 border-t border-border">
-          <div className="max-w-screen-xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-              <div className="lg:col-span-2">
-                <a href="#" className="flex items-center gap-3 mb-6 group">
-                  <img
-                    src="/unbolt-logo.svg?v=2"
-                    alt="Unbolt Logo"
-                    width="200"
-                    height="50"
-                    className="transition-transform group-hover:scale-105"
-                  />
-                </a>
-
-                <p className="text-muted-foreground mb-6 max-w-md">
-                  Governing the future of AI agents with comprehensive security and policy enforcement.
-                </p>
-
-                <div className="space-y-4 text-sm">
-                  <div className="flex items-center gap-3 hover:text-foreground transition-colors cursor-pointer">
-                    <Mail className="h-5 w-5 text-primary" />
-                    <span>hello@unbolt.ai
-                      <a href="mailto:hello@unbolt.ai" className="hover:underline"></a>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-foreground mb-4">Platform</h4>
-                <ul className="space-y-3 text-sm">
-                  <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
-                      MCP Firewall
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
-                      A2A Collaboration
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
-                      Policy Engine
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
-                      Dashboard
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="font-semibold text-foreground mb-4">Company</h4>
-                <ul className="space-y-3 text-sm">
-                  <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
-                      Careers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-foreground transition-colors">
-                      Blog
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:hello@unbolt.ai" className="hover:text-foreground transition-colors">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center text-sm">
-              <p className="mb-4 sm:mb-0">© 2025 Unbolt.ai. Governing the future of AI agents.</p>
-              <div className="flex items-center gap-5">
-                <a
-                  href="https://www.linkedin.com/company/unbolt-ai/"
-                  className="hover:text-foreground transition-colors p-2 hover:bg-accent rounded-lg"
-                  aria-label="LinkedIn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <CTASection />
+        <Footer />
       </div>
     </div>
   )

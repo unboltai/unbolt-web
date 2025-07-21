@@ -1,0 +1,95 @@
+# Current webinar information
+current:
+  title: "New Threats, New Defenses: Protecting Autonomous AI Systems"
+  date: "Thursday, July 24 2025"
+  time: |
+    8:00 - 8:30 AM PDT |
+    11:00 - 11:30 AM EDT |
+    8:30 - 9:00 PM IST  
+  description: |
+   As AI evolves from simple tools to independent agents that make decisions, take actions, and interact with multiple systems, we're facing entirely new security challenges that our existing frameworks can't handle. 
+    
+  learn_topics: 
+    - "Discover why Agentic AI (autonomous, tool-using agents) introduces radically new risks far beyond what traditional IT systems face."
+    - "Explore real-world customer support scenarios demonstrating memory poisoning, tool misuse, prompt injection, and more."
+    - "Understand how and why classic security controls often fail in agentic environments."
+    - "Learn a modern blueprint for proactively managing and mitigating risks in next-generation AI systems."
+  audience:
+    - "AI/ML architects and engineers"
+    - "Security professionals, CISOs, and risk officers"
+    - "Tech leaders in customer support technology and infrastructure"
+    - "Anyone interested in deploying or governing agentic AI solutions"
+
+# Past webinars for recordings page
+past_webinars:
+  - title: "Introduction to AI Agent Security"
+    date: "January 20, 2025"
+    duration: "1 hour 15 minutes"
+    icon: "🛡️"
+    description: "Learn the fundamentals of securing AI agents in enterprise environments. Discover the unique challenges and best practices for protecting autonomous AI systems."
+    topics:
+      - "AI agent threat landscape"
+      - "Tool access control strategies"
+      - "Policy enforcement frameworks"
+      - "Real-world case studies"
+    link: "#"
+    
+  - title: "MCP Security Deep Dive"
+    date: "December 15, 2024"
+    duration: "1 hour 30 minutes"
+    icon: "🔐"
+    description: "Explore the Model Context Protocol (MCP) and learn how to implement comprehensive security controls for AI agent tool access."
+    topics:
+      - "MCP architecture overview"
+      - "Firewall implementation"
+      - "Access control policies"
+      - "Integration strategies"
+    link: "#"
+    
+  - title: "Agent-to-Agent Collaboration Security"
+    date: "November 28, 2024"
+    duration: "1 hour 45 minutes"
+    icon: "🤝"
+    description: "Understand how to enable secure collaboration between multiple AI agents while maintaining governance and audit trails."
+    topics:
+      - "Multi-agent architectures"
+      - "Trust frameworks"
+      - "Communication protocols"
+      - "Audit and compliance"
+    link: "#"
+    
+  - title: "Policy Engine Implementation"
+    date: "October 30, 2024"
+    duration: "1 hour 20 minutes"
+    icon: "⚖️"
+    description: "Learn how to implement real-time policy evaluation using OPA (Open Policy Agent) for AI agent governance."
+    topics:
+      - "OPA fundamentals"
+      - "Policy as code"
+      - "Real-time evaluation"
+      - "Integration patterns"
+    link: "#"
+    
+  - title: "AI Security Compliance & Auditing"
+    date: "September 25, 2024"
+    duration: "1 hour 10 minutes"
+    icon: "📊"
+    description: "Discover how to implement comprehensive audit trails and compliance reporting for AI agent activities."
+    topics:
+      - "Audit trail design"
+      - "Compliance frameworks"
+      - "Reporting automation"
+      - "Regulatory requirements"
+    link: "#"
+    
+  - title: "Enterprise AI Security Deployment"
+    date: "August 18, 2024"
+    duration: "1 hour 35 minutes"
+    icon: "🚀"
+    description: "Learn best practices for deploying AI security solutions at enterprise scale with minimal disruption to existing systems."
+    topics:
+      - "Deployment strategies"
+      - "Integration planning"
+      - "Change management"
+      - "Performance optimization"
+    link: "#" 
