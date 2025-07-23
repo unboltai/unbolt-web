@@ -178,10 +178,12 @@ export default function UnboltLandingPage() {
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </a>
+                <a href="https://www.linkedin.com/company/unbolt-ai" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg" className="px-8 py-3 text-lg font-medium group bg-transparent">
                   <Linkedin className="mr-2 h-5 w-5" />
                   Connect on LinkedIn
                 </Button>
+                </a>
               </div>
             </div>
           </section>
