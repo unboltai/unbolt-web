@@ -18,6 +18,7 @@ import {
   BarChart3,
   Zap,
   Bot,
+  Linkedin,
   Building2,
   Activity,
   Network,
@@ -171,13 +172,15 @@ export default function UnboltLandingPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <Button size="lg" className="px-8 py-3 text-lg font-medium group">
-                  Get Early Access
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </Button>
+                <a href="https://events.teams.microsoft.com/event/caba5858-6f7e-4344-adc2-3eb3df19d8dd@a6415f22-da63-4124-991c-0201818e9895" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="px-8 py-3 text-lg font-medium group bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-0 ring-2 ring-orange-400/20 hover:ring-orange-400/40">
+                    Register for Webinar
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Button>
+                </a>
                 <Button variant="outline" size="lg" className="px-8 py-3 text-lg font-medium group bg-transparent">
-                  <Play className="mr-2 h-5 w-5" />
-                  Watch Demo
+                  <Linkedin className="mr-2 h-5 w-5" />
+                  Connect on LinkedIn
                 </Button>
               </div>
             </div>

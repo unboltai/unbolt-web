@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react"
+import { Mail, Linkedin } from "lucide-react"
 
 // LinkedIn and Twitter/X SVG icons
 const LinkedInIcon = ({ className }: { className?: string }) => (
@@ -108,7 +108,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedInIcon className="w-5 h-5" />
+              <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="https://x.com/unboltai"

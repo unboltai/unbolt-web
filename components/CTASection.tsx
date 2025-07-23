@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Linkedin } from "lucide-react"
 
 // LinkedIn and Twitter/X SVG icons
 const LinkedInIcon = ({ className }: { className?: string }) => (
@@ -30,8 +30,8 @@ export default function CTASection({
   title = "Ready to Govern Your AI Future?",
   subtitle = "",
   description = "We're working with select enterprises to define the future of AI governance. Join the AI security revolution.",
-  primaryButtonText = "Get Early Access",
-  primaryButtonHref = "#",
+  primaryButtonText = "Register for Webinar",
+  primaryButtonHref = "https://events.teams.microsoft.com/event/caba5858-6f7e-4344-adc2-3eb3df19d8dd@a6415f22-da63-4124-991c-0201818e9895",
   secondaryButtonText = "Connect on LinkedIn",
   secondaryButtonHref = "https://www.linkedin.com/company/unbolt-ai",
   showLinkedInButton = true,
@@ -101,7 +101,7 @@ export default function CTASection({
                 size="lg"
                 className="px-8 py-3 text-lg font-medium group bg-background/80 backdrop-blur-sm"
               >
-                {secondaryButtonText.includes("LinkedIn") && <LinkedInIcon className="mr-2 h-5 w-5" />}
+                {secondaryButtonText.includes("LinkedIn") && <Linkedin className="mr-2 h-5 w-5" />}
                 {secondaryButtonText}
               </Button>
             </a>
