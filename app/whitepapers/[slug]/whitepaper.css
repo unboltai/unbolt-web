@@ -279,7 +279,7 @@
 .whitepaper-content h1 + p:first-of-type,
 .whitepaper-content h2 + p:first-of-type,
 .whitepaper-content h3 + p:first-of-type {
-  font-size: 1.25rem !important;
+  font-size: 1.125rem !important;
   line-height: 1.8 !important;
   color: hsl(var(--muted-foreground)) !important;
   margin-top: 1.5rem !important;
