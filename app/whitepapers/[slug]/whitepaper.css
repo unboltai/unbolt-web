@@ -275,6 +275,40 @@
   border-radius: 2px !important;
 }
 
+/* Reference paragraph styling with anchor positioning */
+.whitepaper-content p[id^="ref"] {
+  scroll-margin-top: 120px !important;
+  position: relative !important;
+}
+
+/* Reference number styling */
+.whitepaper-content .reference-number {
+  font-weight: 700 !important;
+  color: hsl(var(--primary)) !important;
+}
+
+/* Reference links styling */
+.whitepaper-content a[href^="#ref"] {
+  color: hsl(var(--primary)) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  padding: 0.125rem 0.25rem !important;
+  border-radius: 0.25rem !important;
+  transition: all 0.2s ease !important;
+  background-color: hsl(var(--primary) / 0.1) !important;
+}
+
+.whitepaper-content a[href^="#ref"]:hover {
+  background-color: hsl(var(--primary) / 0.2) !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth !important;
+}
+
 /* Better spacing for first paragraph after headings */
 .whitepaper-content h1 + p:first-of-type,
 .whitepaper-content h2 + p:first-of-type,

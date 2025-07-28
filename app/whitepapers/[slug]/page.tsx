@@ -38,11 +38,19 @@ async function getWhitePaper(slug: string): Promise<WhitePaperData | null> {
     const { data, content } = matter(fileContents)
     
     // Process markdown to HTML with GitHub Flavored Markdown support
+    // Allow dangerous HTML to preserve anchor tags for references
     const processedContent = await remark()
       .use(remarkGfm)
-      .use(html)
+      .use(html, { allowDangerousHtml: true })
       .process(content)
-    const contentHtml = processedContent.toString()
+    let contentHtml = processedContent.toString()
+
+    // Post-process HTML to add anchor IDs to reference paragraphs
+    // This ensures the anchor targets exist for reference links
+    contentHtml = contentHtml.replace(
+      /<p>\[(\d+)\]\s/g,
+      '<p id="ref$1">[<span class="reference-number">$1</span>] '
+    )
     
     return {
       title: data.title || content.split('\n')[0].replace(/^#\s*/, ''),

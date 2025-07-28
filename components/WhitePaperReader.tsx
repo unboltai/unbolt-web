@@ -20,30 +20,28 @@ export default function WhitePaperReader({ content }: WhitePaperReaderProps) {
   const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
-    // Generate table of contents from content
-    const tempDiv = document.createElement('div')
-    tempDiv.innerHTML = content
-    const headings = tempDiv.querySelectorAll('h1, h2, h3, h4, h5, h6')
-    
+    // Generate table of contents from existing content in the DOM
+    const contentElement = document.querySelector('.whitepaper-content')
+    if (!contentElement) return
+
+    const headings = contentElement.querySelectorAll('h1, h2, h3, h4, h5, h6')
+
     const toc: TableOfContentsItem[] = []
     headings.forEach((heading, index) => {
-      const id = `heading-${index}`
+      // Use existing ID if available, otherwise create one
+      let id = heading.id
+      if (!id) {
+        id = `heading-${index}`
+        heading.id = id
+      }
+
       const level = parseInt(heading.tagName.charAt(1))
       const text = heading.textContent || ''
-      
-      // Add ID to heading for navigation
-      heading.id = id
-      
+
       toc.push({ id, text, level })
     })
-    
+
     setTableOfContents(toc)
-    
-    // Update the actual content with IDs
-    const contentElement = document.querySelector('.whitepaper-content')
-    if (contentElement) {
-      contentElement.innerHTML = tempDiv.innerHTML
-    }
   }, [content])
 
   useEffect(() => {

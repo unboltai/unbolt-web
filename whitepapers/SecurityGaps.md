@@ -269,57 +269,57 @@ Until the industry addresses these fundamental gaps, organizations will remain c
 
 ## References {#references}
 
-<a id="ref1"></a>[1] Big ID. (2025, June). "AI Risk & Readiness in the Enterprise: 2025 Report" https://home.bigid.com/download-ai-risk-report
+[1] Big ID. (2025, June). "AI Risk & Readiness in the Enterprise: 2025 Report" https://home.bigid.com/download-ai-risk-report
 
-<a id="ref2"></a>[2] McKinsey & Company. (2025, March 12). "The state of AI: How organizations are rewiring to capture value." https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
+[2] McKinsey & Company. (2025, March 12). "The state of AI: How organizations are rewiring to capture value." https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai
 
-<a id="ref3"></a>[3] Cloud Security Alliance. (2025, March 11). "Agentic AI Identity Management Approach." https://cloudsecurityalliance.org/blog/2025/03/11/agentic-ai-identity-management-approach
+[3] Cloud Security Alliance. (2025, March 11). "Agentic AI Identity Management Approach." https://cloudsecurityalliance.org/blog/2025/03/11/agentic-ai-identity-management-approach
 
-<a id="ref4"></a>[4] OWASP "Agentic AI – Threats and Mitigations" (Feb 2025) https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/
+[4] OWASP "Agentic AI – Threats and Mitigations" (Feb 2025) https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/
 
-<a id="ref5"></a>[5] GitGuardian. (2025, March 14). "The State of Secrets Sprawl 2025." https://blog.gitguardian.com/the-state-of-secrets-sprawl-2025/
+[5] GitGuardian. (2025, March 14). "The State of Secrets Sprawl 2025." https://blog.gitguardian.com/the-state-of-secrets-sprawl-2025/
 
-<a id="ref6"></a>[6] The Hacker News. (2025, July). "Securing Agentic AI: How to Protect the Invisible Identity Access." https://thehackernews.com/2025/07/securing-agentic-ai-how-to-protect.html
+[6] The Hacker News. (2025, July). "Securing Agentic AI: How to Protect the Invisible Identity Access." https://thehackernews.com/2025/07/securing-agentic-ai-how-to-protect.html
 
-<a id="ref7"></a>[7] Kiteworks. (2025, May 2). "AI Agents Are Advancing—But Enterprise Data Privacy and Security Still Lag (Cloudera Report)." https://www.kiteworks.com/cybersecurity-risk-management/ai-agents-enterprise-data-privacy-security-balance/
+[7] Kiteworks. (2025, May 2). "AI Agents Are Advancing—But Enterprise Data Privacy and Security Still Lag (Cloudera Report)." https://www.kiteworks.com/cybersecurity-risk-management/ai-agents-enterprise-data-privacy-security-balance/
 
-<a id="ref8"></a>[8] Numerous.ai. "Top 5 Sensitive Data Classification Techniques Every Business Should Use." https://numerous.ai/blog/sensitive-data-classification
+[8] Numerous.ai. "Top 5 Sensitive Data Classification Techniques Every Business Should Use." https://numerous.ai/blog/sensitive-data-classification
 
-<a id="ref9"></a>[9] Databricks. (2024). "Introducing the Databricks AI Governance Framework." https://www.databricks.com/blog/introducing-databricks-ai-governance-framework
+[9] Databricks. (2024). "Introducing the Databricks AI Governance Framework." https://www.databricks.com/blog/introducing-databricks-ai-governance-framework
 
-<a id="ref10"></a>[10] Sidley Austin LLP. (2025, February 10). "Artificial Intelligence: U.S. Securities and Commodities Guidelines for Responsible Use." https://www.sidley.com/en/insights/newsupdates/2025/02/artificial-intelligence-us-financial-regulator-guidelines-for-responsible-use
+[10] Sidley Austin LLP. (2025, February 10). "Artificial Intelligence: U.S. Securities and Commodities Guidelines for Responsible Use." https://www.sidley.com/en/insights/newsupdates/2025/02/artificial-intelligence-us-financial-regulator-guidelines-for-responsible-use
 
-<a id="ref11"></a>[11] HubiFi. (2024). "10 Best Automated Audit Trail Software for 2024." https://www.hubifi.com/blog/automated-audit-trail-software
+[11] HubiFi. (2024). "10 Best Automated Audit Trail Software for 2024." https://www.hubifi.com/blog/automated-audit-trail-software
 
-<a id="ref12"></a>[12] ISACA. (2024). "How AI Is Transforming Audit Risk and Compliance." https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2024/how-ai-is-transforming-audit-risk-and-compliance
+[12] ISACA. (2024). "How AI Is Transforming Audit Risk and Compliance." https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2024/how-ai-is-transforming-audit-risk-and-compliance
 
-<a id="ref13"></a>[13] ISACA. (2024). "AI Algorithm Audits Key Control Considerations." https://www.isaca.org/resources/news-and-trends/industry-news/2024/ai-algorithm-audits-key-control-considerations
+[13] ISACA. (2024). "AI Algorithm Audits Key Control Considerations." https://www.isaca.org/resources/news-and-trends/industry-news/2024/ai-algorithm-audits-key-control-considerations
 
-<a id="ref14"></a>[14] TechTarget. (2024). "How to audit AI systems for transparency and compliance." https://www.techtarget.com/searchenterpriseai/tip/How-to-audit-AI-systems-for-transparency-and-compliance
+[14] TechTarget. (2024). "How to audit AI systems for transparency and compliance." https://www.techtarget.com/searchenterpriseai/tip/How-to-audit-AI-systems-for-transparency-and-compliance
 
-<a id="ref15"></a>[15] Forrester. (2024, November 13). "AI Governance Software Spend Will See 30% CAGR From 2024 To 2030." https://www.forrester.com/blogs/ai-governance-software-spend-will-see-30-cagr-from-2024-to-2030/
+[15] Forrester. (2024, November 13). "AI Governance Software Spend Will See 30% CAGR From 2024 To 2030." https://www.forrester.com/blogs/ai-governance-software-spend-will-see-30-cagr-from-2024-to-2030/
 
-<a id="ref16"></a>[16] BCG. (2024, October 24). "AI Adoption in 2024: 74% of Companies Struggle to Achieve and Scale Value." https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
+[16] BCG. (2024, October 24). "AI Adoption in 2024: 74% of Companies Struggle to Achieve and Scale Value." https://www.bcg.com/press/24october2024-ai-adoption-in-2024-74-of-companies-struggle-to-achieve-and-scale-value
 
-<a id="ref17"></a>[17] Cloud Security Alliance. (2024, April 3). "More Than Half of Organizations Plan to Adopt Artificial Intelligence AI Solutions in Coming Year." https://cloudsecurityalliance.org/press-releases/2024/04/03/more-than-half-of-organizations-plan-to-adopt-artificial-intelligence-ai-solutions-in-coming-year-according-to-report-from-cloud-security-alliance-and-google-cloud
+[17] Cloud Security Alliance. (2024, April 3). "More Than Half of Organizations Plan to Adopt Artificial Intelligence AI Solutions in Coming Year." https://cloudsecurityalliance.org/press-releases/2024/04/03/more-than-half-of-organizations-plan-to-adopt-artificial-intelligence-ai-solutions-in-coming-year-according-to-report-from-cloud-security-alliance-and-google-cloud
 
-<a id="ref18"></a>[18] Deloitte. (2024). "State of Generative AI in the Enterprise 2024." https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-generative-ai-in-enterprise.html
+[18] Deloitte. (2024). "State of Generative AI in the Enterprise 2024." https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/content/state-of-generative-ai-in-enterprise.html
 
-<a id="ref19"></a>[19] Google Cloud. (2025, April 28). "The dawn of agentic AI in security operations at RSAC 2025." https://cloud.google.com/blog/products/identity-security/the-dawn-of-agentic-ai-in-security-operations-at-rsac-2025
+[19] Google Cloud. (2025, April 28). "The dawn of agentic AI in security operations at RSAC 2025." https://cloud.google.com/blog/products/identity-security/the-dawn-of-agentic-ai-in-security-operations-at-rsac-2025
 
-<a id="ref20"></a>[20] Microsoft. (2025, May 19). "Microsoft Build 2025: The age of AI agents and building the open agentic web." https://blogs.microsoft.com/blog/2025/05/19/microsoft-build-2025-the-age-of-ai-agents-and-building-the-open-agentic-web/
+[20] Microsoft. (2025, May 19). "Microsoft Build 2025: The age of AI agents and building the open agentic web." https://blogs.microsoft.com/blog/2025/05/19/microsoft-build-2025-the-age-of-ai-agents-and-building-the-open-agentic-web/
 
-<a id="ref21"></a>[21] Cloud Security Alliance. (2025, February 6). "Agentic AI Threat Modeling Framework: MAESTRO." https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro
+[21] Cloud Security Alliance. (2025, February 6). "Agentic AI Threat Modeling Framework: MAESTRO." https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro
 
-<a id="ref22"></a>[22] Consultancy.eu. (2025, January 7). "The EU AI Act: The impact on financial services institutions." https://www.consultancy.eu/news/11237/the-eu-ai-act-the-impact-on-financial-services-institutions
+[22] Consultancy.eu. (2025, January 7). "The EU AI Act: The impact on financial services institutions." https://www.consultancy.eu/news/11237/the-eu-ai-act-the-impact-on-financial-services-institutions
 
-<a id="ref23"></a>[23] Center for American Progress. (2024, June 17). "Fact Sheet: Recommendations for Financial Regulatory Agencies To Take Further Action on AI." https://www.americanprogress.org/article/fact-sheet-recommendations-for-financial-regulatory-agencies-to-take-further-action-on-ai/
+[23] Center for American Progress. (2024, June 17). "Fact Sheet: Recommendations for Financial Regulatory Agencies To Take Further Action on AI." https://www.americanprogress.org/article/fact-sheet-recommendations-for-financial-regulatory-agencies-to-take-further-action-on-ai/
 
-<a id="ref24"></a>[24] Keragon. "What Are The HIPAA Audit Trail And Audit Log Requirements? [2024 Update]." https://www.keragon.com/hipaa/hipaa-explained/hipaa-audit-log-requirements
+[24] Keragon. "What Are The HIPAA Audit Trail And Audit Log Requirements? [2024 Update]." https://www.keragon.com/hipaa/hipaa-explained/hipaa-audit-log-requirements
 
-<a id="ref25"></a>[25] AccountableHQ. (2025, March 16). "AI in Healthcare; What it means for HIPAA." https://www.accountablehq.com/post/ai-and-hipaa
+[25] AccountableHQ. (2025, March 16). "AI in Healthcare; What it means for HIPAA." https://www.accountablehq.com/post/ai-and-hipaa
 
-<a id="ref26"></a>[26] Federal Register. (2025, January 6). "HIPAA Security Rule To Strengthen the Cybersecurity of Electronic Protected Health Information." https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information
+[26] Federal Register. (2025, January 6). "HIPAA Security Rule To Strengthen the Cybersecurity of Electronic Protected Health Information." https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information
 
 ---
 
