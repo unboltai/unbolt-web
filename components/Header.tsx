@@ -6,6 +6,7 @@ import {
   Menu,
   X,
   TvMinimalPlay,
+  FileText,
 } from "lucide-react"
 
 export default function Header() {
@@ -37,6 +38,12 @@ export default function Header() {
                 Webinars
               </Button>
             </a>
+            <a href="/whitepapers" className="hidden sm:block font-medium text-base hover:text-primary transition-colors">
+              <Button variant="outline" size="default" className="font-medium">
+                <FileText className="mr-2 h-5 w-5" />
+                White Papers
+              </Button>
+            </a>
             <Button
               variant="ghost"
               size="icon"
@@ -61,6 +68,11 @@ export default function Header() {
               <li>
                 <a href="/webinar" className="block py-2 hover:text-primary transition-colors">
                   Webinars
+                </a>
+              </li>
+              <li>
+                <a href="/whitepapers" className="block py-2 hover:text-primary transition-colors">
+                  White Papers
                 </a>
               </li>
               <li>
